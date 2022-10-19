@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
-    <title>Variables: Task 2</title>
+    <title>Strings: Task 1</title>
     <style>
       p {
         color: purple;
@@ -28,16 +28,17 @@
   <script>
     // Add your code here
 
-    let myName = 'Paul';
-    myName = 'yasaswini';
+    const quoteStart = 'Don\'t judge each day by the harvest you reap ';
+    const quotend = 'but by the seeds that you plant';
+    const finalQuote = `${quoteStart}${quotend}`;
 
     // Don't edit the code below here!
 
     const section = document.querySelector('section');
+    const para1 = document.createElement('p');
+    para1.textContent = finalQuote;
 
-    const para = document.createElement('p');
-    para.textContent = myName;
-    section.appendChild(para);
+    section.appendChild(para1);
   </script>
 
 </html>
