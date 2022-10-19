@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
-    <title>Variables: Task 2</title>
+    <title>Arrays: Task 4</title>
     <style>
       p {
         color: purple;
@@ -26,18 +26,24 @@
 
   </body>
   <script>
-    // Add your code here
+    const birds = [ "Parrots", "Falcons", "Eagles", "Emus", "Caracaras", "Egrets" ];
 
-    let myName = 'Paul';
-    myName = 'yasaswini';
+    // Add your code here
+    function boo(bird){
+        return bird.startsWith('E')
+    }
+    let  index  = birds.indexOf('Eagles');
+    birds.splice(index,1);
+    const eBirds = birds.filter(boo);
 
     // Don't edit the code below here!
 
     const section = document.querySelector('section');
 
-    const para = document.createElement('p');
-    para.textContent = myName;
-    section.appendChild(para);
+    const para1 = document.createElement('p');
+    para1.textContent = eBirds;
+
+    section.appendChild(para1);
   </script>
 
 </html>

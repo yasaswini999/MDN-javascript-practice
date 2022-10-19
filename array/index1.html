@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
-    <title>Variables: Task 1</title>
+    <title>Arrays: Task 1</title>
     <style>
       p {
         color: purple;
@@ -27,18 +27,19 @@
   </body>
   <script>
     // Add your code here
-    const myName = 'yasaswini';
-    const myAge = 22;
+    const myArray = ['lakme','ponds','sugar'];
+    myArray[0] = 'pears';
+    myArray[1] = 'kajal';
+    myArray.unshift('maybelline');
+
     // Don't edit the code below here!
 
     const section = document.querySelector('section');
 
-    const para1 = document.createElement('p');
-    para1.textContent = myName;
-    const para2 = document.createElement('p');
-    para2.textContent = myAge;
+    let para1 = document.createElement('p');
+    para1.textContent = `Array: ${ myArray }`;
+
     section.appendChild(para1);
-    section.appendChild(para2);
   </script>
 
 </html>

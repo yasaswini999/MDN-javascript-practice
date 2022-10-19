@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
-    <title>Variables: Task 3</title>
+    <title>Arrays: Task 3</title>
     <style>
       p {
         color: purple;
@@ -26,23 +26,28 @@
 
   </body>
   <script>
+    let myArray = [ "Ryu", "Ken", "Chun-Li", "Cammy", "Guile", "Sakura", "Sagat", "Juri" ];
+
     // Add your code here
+    myArray.pop();
+    myArray.push('Zangief');
+myArray.push('Ibuki');
 
-    let myName = 'Default';
-    myName = 'Chris';
+myArray.forEach(function(element, index) {
+  let newElement = `${ element } (${index})`;
+  myArray[index] = newElement;
+});
 
-    let myAge = '42';
+let myString = myArray.join(' - ');
 
     // Don't edit the code below here!
 
     const section = document.querySelector('section');
 
-    const para1 = document.createElement('p');
-    const para2 = document.createElement('p');
-    para1.textContent = myName;
-    para2.textContent = `In 20 years, I will be ${myAge + 20}`;
+    let para1 = document.createElement('p');
+    para1.textContent = myString;
+
     section.appendChild(para1);
-    section.appendChild(para2);
   </script>
 
 </html>
