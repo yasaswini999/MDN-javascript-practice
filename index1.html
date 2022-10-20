@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
-    <title>Variables: Task 2</title>
+    <title>Functions: Task 1</title>
     <style>
       p {
         color: purple;
@@ -26,17 +26,21 @@
 
   </body>
   <script>
-    // Add your code here
+    const names = ['Chris', 'Li Kang', 'Anne', 'Francesca', 'Mustafa', 'Tina', 'Bert', 'Jada']
+    const para = document.createElement('p');
 
-    let myName = 'Paul';
-    myName = 'yasaswini';
+    // Add your code here
+    function chooseNmae(){
+        const randomNumber = Math.floor(Math.random() * names.length);
+  const choice = names[randomNumber];
+  para.textContent = choice;
+    }
+    chooseNmae();
 
     // Don't edit the code below here!
 
     const section = document.querySelector('section');
 
-    const para = document.createElement('p');
-    para.textContent = myName;
     section.appendChild(para);
   </script>
 
